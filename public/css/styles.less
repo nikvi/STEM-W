@@ -26,8 +26,13 @@ body {
 }
 
 #footer {
-  height: 110px;
   padding-top: 15px;
+  .container-fluid {
+    width: 70%;
+  }
+  ul li {
+    margin-bottom: 10px;
+  }
 }
 
 // Navbar
@@ -41,15 +46,15 @@ body {
   margin: -15px 15px -15px 0;
 }
 
-.navbar-brand {
-  background-image: url('../img/npm-logo.png');
+.navbar-brand {/*
+  background-image: url('../img/stem-logo.png');
   background-repeat: no-repeat;
   background-size: 40px;
   background-position: left center;
   padding-left: 50px;
   margin-left: 15px;
   height: 45px;
-}
+*/}
 
 // Social Buttons
 // -------------------------
@@ -99,4 +104,45 @@ body {
   img {
     padding-right: 10px;
   }
+}
+
+.jumbo {
+  width: 70%;
+  .jumbo-image {
+    background-image: url('../img/stem-logo.png');
+    background-repeat: no-repeat;
+    background-size: 250px;
+    background-position: left center;
+    height: 250px;
+  }
+  .text {
+    padding-top: 10%;
+    .lead {
+      font-style: italic;
+      font-weight: lighter;
+    }
+    .buttons {
+      .btn-group{
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
+.info {
+  a {
+    color: black;
+  }
+  width: 70%;
+  margin-top: 30px;
+    .row {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 20px;
+      .main {
+        font-size: 20px;
+        text-transform: capitalize;
+        padding: 15px;
+      }
+    }
 }
