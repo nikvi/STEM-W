@@ -1,0 +1,41 @@
+extends layout
+
+block content
+  .container-fluid.mentor
+    #title FIND A MENTOR
+    .number 1
+    .step Choose your field of interest.
+    #subjects
+      .cell
+        span.oneline Biology
+      .cell
+        span.oneline Chemistry
+      .cell
+        span.oneline Physics
+      .cell
+        span.oneline Mathematics
+      .cell Computer Science
+      .cell Electrical Engineering
+      .cell Mechanical Engineering
+      .cell Civil Engineering
+      .cell Chemical Engineering
+      .cell
+        span.oneline Other
+    .number 2
+    .step Select your mentor's location.
+    .choices
+      select.form-control
+        option Australia
+        option China
+        option Japan
+        option India
+        option United States of America
+    .number 3
+    .step Select your language preference.
+    .choices
+      select.form-control
+        option English
+        option Chinese
+        option Japanese
+    #search
+      button.butt(type='button') Search
