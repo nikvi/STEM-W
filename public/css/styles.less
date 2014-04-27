@@ -221,18 +221,55 @@ body {
   a {
     color: black;
   }
+
   width: 70%;
   margin-top: 30px;
-    .row {
-      border: 1px solid #ccc;
+
+  .row {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    .main {
+      font-size: 20px;
+      text-transform: capitalize;
       padding: 15px;
-      margin-bottom: 20px;
-      .main {
-        font-size: 20px;
-        text-transform: capitalize;
-        padding: 15px;
-      }
     }
+  }
+
+  .one{
+    background-image:url("../img/home1.png");
+    background-repeat:no-repeat;
+  }
+  .two{
+    background-image:url("../img/home2.png");
+    background-repeat:no-repeat;
+  }
+  .three{
+    background-image:url("../img/home3.png");
+    background-repeat:no-repeat;
+  }
+  .encompass{
+    width:205px;
+    height:360px;
+    float:left;
+  }
+  .photo{
+    display:inline;
+    > img{
+      width:200px;
+      height:200px;
+      display:inline;
+    }
+  }
+  .caption{
+    width:200px;
+    height:50px;
+    font-family:Arial;
+    text-align:center;
+    font-size:18px;
+    background-color:#789fe1;
+    line-height:50px;
+  }
 }
 
 .buttons{
