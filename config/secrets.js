@@ -24,8 +24,8 @@ module.exports = {
   },
 
   facebook: {
-    clientID: process.env.FACEBOOK_ID || '754220301289665',
-    clientSecret: process.env.FACEBOOK_SECRET || '41860e58c256a3d7ad8267d3c1939a4a',
+    clientID: process.env.FACEBOOK_ID || '230530347141143',
+    clientSecret: process.env.FACEBOOK_SECRET || '98f64d2a2fb5ad4339d4d0d62cfc6b54',
     callbackURL: '/auth/facebook/callback',
     passReqToCallback: true
   },
@@ -52,8 +52,8 @@ module.exports = {
   },
 
   google: {
-    clientID: process.env.GOOGLE_ID || '828110519058.apps.googleusercontent.com',
-    clientSecret: process.env.GOOGLE_SECRET || 'JdZsIaWhUFIchmC1a_IZzOHb',
+    clientID: process.env.GOOGLE_ID || '326892606835-j8hch6m8738mjst280ffr8bhvav9rctg.apps.googleusercontent.com',
+    clientSecret: process.env.GOOGLE_SECRET || '0CjatgpCaqlTrWwXjojhEJf8',
     callbackURL: '/auth/google/callback',
     passReqToCallback: true
   },
