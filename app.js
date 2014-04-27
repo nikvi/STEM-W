@@ -27,8 +27,9 @@ var connectAssets = require('connect-assets');
 
 var homeController = require('./controllers/home');
 var mentorController = require('./controllers/mentor');
-
+var forumController = require('./controllers/forum');
 var userController = require('./controllers/user');
+var meetupController = require('./controllers/meetup')
 var apiController = require('./controllers/api');
 var contactController = require('./controllers/contact');
 
@@ -115,7 +116,9 @@ app.use(function(req, res, next) {
  */
 
 app.get('/', homeController.index);
+app.get('/forum',forumController.getForum);
 app.get('/mentors',mentorController.getMentors);
+app.get('/meetup',meetupController.getMeetUp);
 app.get('/login', userController.getLogin);
 app.post('/login', userController.postLogin);
 app.get('/logout', userController.logout);
