@@ -39,9 +39,18 @@ body {
 // -------------------------
 
 @navbar-height: 45px;
+@navbar-margin-bottom: 0;
 
-.navbar{
-  background-color:#1b1b1b;
+.navbar {
+  max-height: 45px;
+}
+
+.navbar a.brand .logobox{
+  background-color: white;
+  height: 150px;
+  width: 150px;
+  float: left;
+  border-radius:0 0 15px 15px;
 }
 
 .navbar-nav .profile-image {
@@ -110,20 +119,26 @@ body {
   }
 }
 
+.bgofjumbo {
+  background: url('../img/bgforjumbo.jpg') no-repeat center center;
+  position: fixed;
+  width: 100%;
+  margin-top:-25px;
+  height: 250px; /*same height as jumbo*/
+  top:0;
+  left:0;
+  z-index: -1;
+  opacity: 0.5;
+}
+
 .jumbo {
-  width: 70%;
-  .jumbo-image {
-    background-image: url('../img/stem-logo.png');
-    background-repeat: no-repeat;
-    background-size: 250px;
-    background-position: left center;
-    height: 250px;
-  }
+  margin-top:-25px;
+  height:250px;
   .text {
-    padding-top: 10%;
+    padding-top:45px;
     .lead {
       font-style: italic;
-      font-weight: lighter;
+      font-weight: light;
     }
     .buttons {
       .btn-group{
