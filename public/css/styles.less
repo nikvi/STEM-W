@@ -12,13 +12,11 @@ html, body {
 }
 
 body {
-  padding-top: 70px;
+  /*background-color: #2E2C28;*/
 }
 
 #wrap {
   min-height: 100%;
-  height: auto !important;
-  height: 100%;
   /* Negative indent footer by its height */
   margin: 0 auto -110px;
   /* Pad bottom by footer height + (optional) extra spacing */
@@ -28,12 +26,13 @@ body {
 #footer {
   padding-top: 15px;
   .container-fluid {
-    width: 70%;
+    width: 80%;
   }
   ul li {
     margin-bottom: 10px;
   }
 }
+
 
 // Navbar
 // -------------------------
@@ -43,6 +42,7 @@ body {
 
 .navbar {
   max-height: 45px;
+  padding: 0
 }
 
 .navbar a.brand .logobox{
@@ -58,16 +58,6 @@ body {
   height: 30px;
   margin: -15px 15px -15px 0;
 }
-
-.navbar-brand {/*
-  background-image: url('../img/stem-logo.png');
-  background-repeat: no-repeat;
-  background-size: 40px;
-  background-position: left center;
-  padding-left: 50px;
-  margin-left: 15px;
-  height: 45px;
-*/}
 
 // Social Buttons
 // -------------------------
@@ -119,34 +109,31 @@ body {
   }
 }
 
+// Jumbo : header
+// -------------------------
+
 .bgofjumbo {
   background: url('../img/bgforjumbo.jpg') no-repeat center center;
-  position: fixed;
+  position: absolute;
   width: 100%;
-  margin-top:-25px;
-  height: 250px; /*same height as jumbo*/
-  top:0;
+  height: 240px; /*height of jumbo plus buttons for home; margin-top for other pages*/
+  top:45;
   left:0;
-  z-index: -1;
+  z-index: -3;
   opacity: 0.5;
 }
 
 .jumbo {
-  margin-top:-25px;
-  height:250px;
-  .text {
-    padding-top:45px;
-    .lead {
-      font-style: italic;
-      font-weight: light;
-    }
-    .buttons {
-      .btn-group{
-        padding-right: 10px;
-      }
-    }
+  height: 170px;
+  .lead {
+    margin-top: 50px;
+    font-style: italic;
+    font-weight: light;
   }
 }
+
+// Find A Mentor page
+// -------------------------
 
 .mentor {
   #title {
@@ -219,6 +206,9 @@ body {
   }
 }
 
+// Conversations: Forum page
+// -------------------------
+
 .forum{
   #title {
     width:520px;
@@ -232,16 +222,18 @@ body {
   }
 }
 
+// Index : homepage
+// -------------------------
+
 .info {
+  width: 80%;
+  padding-top: 20px;
+  color: white;
+
   a {
     color: black;
   }
-
-  width: 70%;
-  margin-top: 30px;
-
   .row {
-    border: 1px solid #ccc;
     padding: 15px;
     margin-bottom: 20px;
     .main {
@@ -286,17 +278,47 @@ body {
     line-height:50px;
   }
 }
-
-.buttons{
-  padding-left :150px;
-  padding-top :15px;
-}
-
-.btn-group{
-  padding-right :15px;
-  margin :20px
-}
 .thumbnail img { 
   width:200px;
   height:200px; 
+}
+
+.buttons {
+  width: 80%;
+  padding:0 0 25px;
+  .row {margin: 0 -20px;}
+  .col-md-4{padding:0 20px;} 
+
+  .button {
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 8px;
+    background-color: #383838;
+    opacity: 0.85;
+  }
+
+  .button:hover {
+      opacity: 1;
+  }
+
+  a {
+    color: white;
+  }
+  a:hover {
+    color: white;
+    text-decoration: none;
+  }
+
+}
+
+// Span : text styles
+// -------------------------
+
+span.bold{
+  font-weight: bold;
+}
+
+span.italic{
+  font-style: italic;
 }

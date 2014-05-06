@@ -1,59 +1,76 @@
 extends layout
-
 block content
-  include partials/buttons
+  //include partials/buttons
+  .container-fluid.buttons
+    .row
+      .col-md-4
+        a(href='')
+          .button
+            | I 
+            span.italic need
+            | &nbsp;a&nbsp;
+            span.bold mentor
+      .col-md-4
+        a(href='')
+          .button
+            | I 
+            span.italic am
+            | &nbsp;a&nbsp;
+            span.bold mentor
+      .col-md-4
+        a(href='')
+          .button
+            | I am an 
+            span.bold organisation
   .container.info
-    a(href='/mentors')
-      .row
-        .col-md-4.one.main Find a mentor
-        .col-md-8.desc
-          ul
-            li Meet a mentor in your fields of interest to support you through your journey.
-            li Interact with experts from your dream organisations.
-    a(href='/forum')
-      .row
-        .col-md-4.two.main Conversations
-        .col-md-8.desc
-          ul
-            li Ask questions and get relevant feedback from people from different STEM areas around the world.
-    a(href='#')
-      .row
-        .col-md-4.three.main Meetup
-        .col-md-8.desc
-          ul
-            li Find gatherings in your local area to meet other women, share your story and be inspired.
+    .wrapper
+      a(href='/mentors')
+        .row
+          .col-md-4.one.main Find a mentor
+          .col-md-8.desc
+            ul
+              li Meet a mentor in your fields of interest to support you through your journey.
+              li Interact with experts from your dream organisations.
+      a(href='/forum')
+        .row
+          .col-md-4.two.main Conversations
+          .col-md-8.desc
+            ul
+              li Ask questions and get relevant feedback from people from different STEM areas around the world.
+      a(href='#')
+        .row
+          .col-md-4.three.main Meetup
+          .col-md-8.desc
+            ul
+              li Find gatherings in your local area to meet other women, share your story and be inspired.
 
-    .col-sm-6.col-md-4
-      .thumbnail
-       .legend Hackathons
-        img(src='../img/hackathon.jpg', alt='Hackathons')
+      .col-sm-6.col-md-4
+        .thumbnail
+         .legend Hackathons
+          img(src='../img/hackathon.jpg', alt='Hackathons')
 
-    .col-sm-6.col-md-4
-      .thumbnail
-        .legend Collaboration
-        img(src='../img/Collaboration_Network.png', alt='Collaboration')
-         
-    .col-sm-6.col-md-4
-      .thumbnail
-        .legend Resources
-        img(src='../img/icon_resources_white.jpg', alt='Resources')
+      .col-sm-6.col-md-4
+        .thumbnail
+          .legend Collaboration
+          img(src='../img/Collaboration_Network.png', alt='Collaboration')
+           
+      .col-sm-6.col-md-4
+        .thumbnail
+          .legend Resources
+          img(src='../img/icon_resources_white.jpg', alt='Resources')
 
+      .col-sm-6.col-md-4
+        .thumbnail
+          .legend Partners
+          img(src='../img/logo_womeninict.jpg', alt='Partners')
+       
+      .col-sm-6.col-md-4
+        .thumbnail
+          .legend Testimonials 
+          img(src='../img/testimonial.png', alt='Testimonials')
 
-
-    .col-sm-6.col-md-4
-      .thumbnail
-        .legend Partners
-        img(src='../img/logo_womeninict.jpg', alt='Partners')
-     
-
-    .col-sm-6.col-md-4
-      .thumbnail
-        .legend Testimonials 
-        img(src='../img/testimonial.png', alt='Testimonials')
-      
-
-    .col-sm-6.col-md-4
-      .thumbnail
-        .legend Opportunties
-        img(src='../img/women.jpg', alt='Opportunties')
+      .col-sm-6.col-md-4
+        .thumbnail
+          .legend Opportunties
+          img(src='../img/women.jpg', alt='Opportunties')
        
