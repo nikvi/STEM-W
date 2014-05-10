@@ -3,6 +3,7 @@
 @import "lib/bootstrap/bootstrap";
 @import "lib/bootstrap-social";
 @import "themes/default";
+@import url(http://fonts.googleapis.com/css?family=Raleway:600);
 
 // Scaffolding
 // -------------------------
@@ -13,6 +14,7 @@ html, body {
 
 body {
   /*background-color: #2E2C28;*/
+  background-image: url('../img/mainbg.png')
 }
 
 #wrap {
@@ -226,7 +228,7 @@ body {
 // -------------------------
 
 .info {
-  width: 80%;
+  width: 100%;
   padding-top: 20px;
   color: white;
 
@@ -234,53 +236,43 @@ body {
     color: black;
   }
   .row {
-    padding: 15px;
-    margin-bottom: 20px;
-    .main {
-      font-size: 20px;
-      text-transform: capitalize;
-      padding: 15px;
-    }
+    padding: 20px;
   }
-
-  .one{
-    background-image:url("../img/home1.png");
-    background-repeat:no-repeat;
+  .divisiontitle{
+    color: black;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size:30px;
   }
-  .two{
-    background-image:url("../img/home2.png");
-    background-repeat:no-repeat;
+  .desc ul{
+    list-style-type:circle;
+    font-family:Verdana;
+    font-size:16px;
   }
-  .three{
-    background-image:url("../img/home3.png");
-    background-repeat:no-repeat;
-  }
-  .encompass{
-    width:205px;
-    height:360px;
-    float:left;
-  }
-  .photo{
-    display:inline;
-    > img{
-      width:200px;
-      height:200px;
+  .secondary{
+    margin-top: 30px;
+    .photo{
       display:inline;
+      > img{
+        width:200px;
+        height:200px;
+        display:inline;
+      }
+    }
+    .caption{
+      width:200px;
+      height:50px;
+      font-family:Arial;
+      text-align:center;
+      font-size:18px;
+      background-color:#789fe1;
+      line-height:50px;
+    }
+    .thumbnail img { 
+      width:200px;
+      height:200px; 
     }
   }
-  .caption{
-    width:200px;
-    height:50px;
-    font-family:Arial;
-    text-align:center;
-    font-size:18px;
-    background-color:#789fe1;
-    line-height:50px;
-  }
-}
-.thumbnail img { 
-  width:200px;
-  height:200px; 
 }
 
 .buttons {
