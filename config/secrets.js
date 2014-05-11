@@ -28,8 +28,8 @@ module.exports = {
 
 
   twitter: {
-    consumerKey: process.env.TWITTER_KEY || '6NNBDyJ2TavL407A3lWxPFKBI',
-    consumerSecret: process.env.TWITTER_SECRET  || 'ZHaYyK3DQCqv49Z9ofsYdqiUgeoICyh6uoBgFfu7OeYC7wTQKa',
+    consumerKey: process.env.TWITTER_KEY || 'd22nIpGNmNd9b517czbT9vqbQ',
+    consumerSecret: process.env.TWITTER_SECRET  || 'n6dhEutn9NQEbKCddFfk1CD9lgih2nxs17Yy0MRyrINLWBlUqx',
     callbackURL: '/auth/twitter/callback',
     passReqToCallback: true
   },
