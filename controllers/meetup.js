@@ -2,9 +2,14 @@
 
 get meet up
 */
+var meetup = require('meetup-api')('');
 
 exports.getMeetUp = function(req, res) {
-  res.render('meetUp', {
-    title: 'Meet Ups'
-  });
+	meetup.getEvents({'group_urlname' : 'NodeJS-Argentina'}, function(err,events) {
+  		res.render('meetUp', {
+  			title: 'Meetup',
+    		meetups: events
+  		});
+	});
+  
 };

@@ -1,0 +1,8 @@
+extends layout
+
+block content
+	.container-fluid.forum
+		#title #{title}
+		#meetups #{meetups}
+		script.
+			console.log(!{JSON.stringify(meetups)});
