@@ -25,20 +25,21 @@ block content
   .container-fluid.info
     .row
       .divisiontitle
-        | ===== Getting Started =====
+        | Getting Started
     a(href='/mentors')
-      .row
+      .row.primarykey
         .col-md-3.col-md-offset-1.main
           img(src='../img/home1.png', alt='Find a mentor')
         .col-md-7.desc
-          ul
-            li Meet a mentor in your fields of interest to support you through your journey.
-            li Interact with experts from your dream organisations.
+          | Meet a mentor in your fields of interest to support you through your journey and interact with experts from your dream organisations.
     a(href='/forum')
-      .row
+      .row.primarykey
         .col-md-3.col-md-offset-1.main
           img(src='../img/home2.png', alt='Conversations')
         .col-md-7.desc
+          | Ask questions and get relevant feedback from people from different STEM areas around the world.
+    a(href='#')
+      .row.primarykey
           ul
             li Ask questions and get relevant feedback from people from different STEM areas around the world.
     a(href='/meetup')
@@ -46,39 +47,39 @@ block content
         .col-md-3.col-md-offset-1.main
           img(src='../img/home3.png', alt='Meet up')
         .col-md-7.desc
-          ul
-            li Find gatherings in your local area to meet other women, share your story and be inspired.
+          | Find gatherings in your local area to meet other women, share your story and be inspired.
     .secondary
       .divisiontitle
-        | ===== Other Resources =====
+        | Other Resources
       .row
         .col-sm-6.col-md-4
           .thumbnail
-           .legend Hackathons
+            | Events
             img(src='../img/hackathon.jpg', alt='Hackathons')
 
         .col-sm-6.col-md-4
           .thumbnail
-            .legend Collaboration
-            img(src='../img/Collaboration_Network.png', alt='Collaboration')
+            | Testimonials 
+            img(src='../img/testimonial.jpg', alt='Testimonials')
              
         .col-sm-6.col-md-4
           .thumbnail
-            .legend Resources
-            img(src='../img/icon_resources_white.jpg', alt='Resources')
-      .row
-        .col-sm-6.col-md-4
-          .thumbnail
-            .legend Partners
-            img(src='../img/logo_womeninict.jpg', alt='Partners')
-         
-        .col-sm-6.col-md-4
-          .thumbnail
-            .legend Testimonials 
-            img(src='../img/testimonial.png', alt='Testimonials')
+            | Resources
+            img.img-responsive(src='../img/icon_resources_white.jpg', alt='Resources')
+      //
+        .row
+          .col-sm-6.col-md-4
+            .thumbnail
+              .legend Partners
+              img(src='../img/logo_womeninict.jpg', alt='Partners')
 
-        .col-sm-6.col-md-4
-          .thumbnail
-            .legend Opportunties
-            img(src='../img/women.jpg', alt='Opportunties')
+          .col-sm-6.col-md-4
+            .thumbnail
+              .legend Collaboration
+              img.img-responsive(src='../img/collab.jpg', alt='Collaboration')
+
+          .col-sm-6.col-md-4
+            .thumbnail
+              .legend Opportunties
+              img(src='../img/women.jpg', alt='Opportunties')
        
