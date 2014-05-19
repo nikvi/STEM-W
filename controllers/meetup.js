@@ -32,7 +32,8 @@ var APIRequest = function(endpoint, params, callback) {
 
 exports.getMeetUp = function(req, res) {
 	APIRequest({ "resource": "https://api.meetup.com/recommended/groups", "method": "get"},{'desc' : 'tech, women'}, function(err,events) {
-  		res.render('meetUp', {
+  		var value = events;
+      res.render('meetUp', {
   			title: 'MeetUps',
     		meetups: events
   		});

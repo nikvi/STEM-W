@@ -1,6 +1,7 @@
 module.exports = {
 
-  db: process.env.MONGODB|| 'mongodb://stem:123Welcome@ds043037.mongolab.com:43037/stemdb',
+  db: process.env.MONGODB|| 'mongodb://localhost:27017/test',
+  //'mongodb://stem:123Welcome@ds043037.mongolab.com:43037/stemdb',
 
   sessionSecret: process.env.SESSION_SECRET || 'Your Session Secret goes here',
 
