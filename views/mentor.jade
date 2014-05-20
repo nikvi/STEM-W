@@ -2,13 +2,14 @@ extends layout
 
 block content
   .container-fluid.mentor
-    #title FIND A MENTOR
     .row
-      .col-md-1.number 1
-      .col-md-11.step Choose your field of interest.
+      .col-md-10.col-md-offset-1#title FIND A MENTOR
+    .row
+      .col-md-1.col-md-offset-1.number 1
+      .col-md-9.step Choose your field of interest.
     #subjects
       .row
-        .col-md-2.cell
+        .col-md-2.col-md-offset-1.cell
           span.oneline Biology
         .col-md-2.cell
           span.oneline Chemistry
@@ -16,17 +17,19 @@ block content
           span.oneline Physics
         .col-md-2.cell
           span.oneline Mathematics
-        .col-md-2.cell Computer Science
+        .col-md-2.cell
+          span.oneline Computer Science
       .row
-        .col-md-2.cell Electrical Engineering
+        .col-md-2.col-md-offset-1.cell Electrical Engineering
         .col-md-2.cell Mechanical Engineering
-        .col-md-2.cell Civil Engineering
+        .col-md-2.cell
+          span.oneline Civil Engineering
         .col-md-2.cell Chemical Engineering
         .col-md-2.cell
           span.oneline Other
     .row
-      .col-md-1.number 2
-      .col-md-6.step Select your mentor's location.
+      .col-md-1.col-md-offset-1.number 2
+      .col-md-5.step Select your mentor's location.
       .col-md-4.choices
         select.form-control
           option Australia
@@ -35,15 +38,14 @@ block content
           option India
           option United States of America
     .row
-      .col-md-1.number 3
-      .col-md-6.step Select your language preference.
+      .col-md-1.col-md-offset-1.number 3
+      .col-md-5.step Select your language preference.
       .col-md-4.choices
         select.form-control
           option English
           option Chinese
           option Japanese
     .row
-      .col-md-8
-      .col-md-3
-        #search
-          button.butt(type='button') Search
+      .col-md-4
+      .col-md-7
+          button.butt(type='button') SEARCH

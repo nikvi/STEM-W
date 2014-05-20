@@ -2,16 +2,17 @@ extends layout
 
 block content
 	.container-fluid.meetups
-		#title #{title}
-		//
-			#meetups #{meetups}
 		script.
 			console.log(!{JSON.stringify(meetups)});
+
 		.row
-			.col-md-2#eventimage
-				img.img-responsive(src='')
-			.col-md-7#eventdescrip
-				span#eventtitle Some Lunch Thing
-				| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales magna in bibendum ornare. Cras vitae luctus libero, eget ullamcorper ipsum. Proin vitae porttitor ante, et tempus sem. Mauris ullamcorper nec orci non scelerisque. Duis porta nulla mauris, ac lacinia est pretium at. Aenean sit amet consectetur arcu.
-			.col-md-3#eventlocation
-				| Melbourne, Australia
+			#title MEET UP
+		.listofevents
+			.row
+				.col-md-2#eventimage
+					img.img-responsive(src='')
+				.col-md-7#eventdescrip
+					span#eventtitle Some Lunch Thing
+					| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales magna in bibendum ornare. Cras vitae luctus libero, eget ullamcorper ipsum. Proin vitae porttitor ante, et tempus sem. Mauris ullamcorper nec orci non scelerisque. Duis porta nulla mauris, ac lacinia est pretium at. Aenean sit amet consectetur arcu.
+				.col-md-3#eventlocation
+					| Melbourne, Australia
