@@ -1,6 +1,6 @@
 module.exports = {
 
-db: process.env.MONGODB|| 'mongodb://stem:123Welcome@ds043037.mongolab.com:43037/stemdb',
+db: process.env.MONGODB|| 'mongodb://stem:123Welcome@ds031319.mongolab.com:31319/stemdb',
   //db: process.env.MONGODB|| 'mongodb://localhost:27017/test',
 
 
